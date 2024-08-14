@@ -123,7 +123,7 @@ const getExpr = function (key: string, expr: string) {
   }
 
   if (expr.indexOf('*/') > 0) {
-    return expr.slice(0, expr.indexOf('*/')).trim();
+    return expr.slice(0, expr.indexOf('*/')).trim()
   }
 
   /*
