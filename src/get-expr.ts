@@ -141,10 +141,6 @@ const getExpr = function (key: string, expr: string) {
     return expr.trim()
   }
 
-  if (expr.indexOf('*/') > 0) {
-    return expr.slice(0, expr.indexOf('*/')).trim()
-  }
-
   /*
     When an assignment has a regex (ex: `#set _R /\s/`), skipRegex will not
     recognize it due to invalid syntax. Inserting the missing '=' solves this.
