@@ -74,7 +74,7 @@ const skipBracket = (expr: string, start: number, stack: string[]) => {
  * @param expr Raw expression
  * @param index Position of this slash
  */
-function handleSlashExtraction (expr: string, index: number) {
+const handleSlashExtraction = function (expr: string, index: number) {
   if (expr[index + 1] === '/') {
     return expr.slice(0, index)
   }
